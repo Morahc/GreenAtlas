@@ -1,0 +1,23 @@
+{
+  "name": "greenatlas2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/styles/style.css -o ./assets/styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morahc/GreenAtlas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Morahc/GreenAtlas/issues"
+  },
+  "homepage": "https://github.com/Morahc/GreenAtlas#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

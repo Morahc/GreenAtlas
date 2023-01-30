@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Atlas</title>
+    <link rel="stylesheet" href="/assets/styles/output.css" />
+  </head>
+  <body>
+    <main class="backg1 md:backg2">
+      <!-- homepage -->
+    <section class="h-screen flex flex-col" id="home">
+      <nav>
+        <div class="flex justify-between items-center px-8 pt-4"> 
+        <h1 class="text-3xl">Green Atlas</h1>
+
+        <ul class="hidden md:flex space-x-6 text-white">
+          <li>About</li>
+          <li>Community</li>
+          <li>Energy Data</li>
+        </ul>
+
+        <div class="hidden md:flex gap-x-6">
+          <a class="btn" href="#">Sign Up</a>
+          <a class="btn bg-orange-400" href="#">Login</a>
+        </div>
+        
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+        </div>
+        
+
+        <!-- Mobile menu -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden">
+            <a href="#">About</a>
+            <a href="#">Community</a>
+            <a href="#">Energy Data</a>
+        </div>
+      </div>
+      </nav>
+
+      <section class="h-full grid place-items-center relative">
+        <div class="text-center md:text-right absolute md:right-20">
+          <div class="space-y-6 text-white mb-8">
+            <h3 class="md:text-3xl text-2xl">Let’s help you find the right energy source.</h3>
+            <h1 class="md:text-7xl text-5xl">Wind, <span class="text-blue-600">Hydro</span> or <span class="text-orange-400">Solar</span>?</h1>
+            <p class="text-2xl">We’ll tell you whats best!</p>
+          </div>
+          <a href="#" class="btn bg-white text-black text-lg py-4 px-12">GET STARTED</a>
+        </div>
+      </section>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+
+    </section>
+
+    <!-- pricing -->
+    <section id="pricing">
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+    </footer>
+    <main/>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
