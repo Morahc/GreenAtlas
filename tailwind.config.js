@@ -9,6 +9,13 @@ module.exports = {
       },
       fontFamily: {
         nunito: ['Nunito']
+      },
+      grayscale: {
+        50: '50%',
+      },
+      brightness: {
+        25: '.25',
+        75: '.75',
       }
     },
   },
