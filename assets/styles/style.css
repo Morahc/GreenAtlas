@@ -10,11 +10,18 @@
 }
 @layer components {
   .btn {
-    @apply py-2 px-8 bg-blue-600 text-white rounded-full hover:opacity-90 text-sm md:text-base;
+    @apply py-2 px-8 rounded-full hover:opacity-90 text-sm md:text-base transition ease-in-out delay-150 hover:-translate-y-1;
+  }
+  .btn-primary {
+    @apply btn bg-blue-600 text-white;
   }
   .btn-outline {
-    @apply btn border-2 border-blue-300 rounded-full bg-white text-gray-600;
+    @apply btn border-2 border-blue-300 bg-transparent text-blue-300;
   }
+  .btn1 {
+    @apply text-sm md:text-base;
+  }
+
   .form-input {
     @apply border-2 rounded-md p-2 w-full bg-white text-sm md:text-base;
   }
@@ -66,32 +73,8 @@
     transform: rotate(-45deg) translateY(6px) translate(-6px);
   }
 
-  .backg2 {
-    /* The image used */
-    background-image: url('../images/Earth2.png');
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .backg1 {
-    /* The image used */
-    background-image: url('../images/Earth1.png');
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  .material-symbols-outlined.md-60 {
+    font-size: 60px;
   }
 
 }

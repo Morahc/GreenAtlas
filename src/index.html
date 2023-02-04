@@ -6,71 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Atlas</title>
     <link rel="stylesheet" href="/assets/styles/output.css" />
+    <!-- google font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <main class="backg1 md:backg2">
+    <main class="">
       <!-- homepage -->
-    <section class="h-screen flex flex-col" id="home">
-      <nav>
-        <div class="flex justify-between items-center px-8 pt-4"> 
-        <h1 class="text-3xl">Green Atlas</h1>
+      <section
+        class="h-screen flex flex-col bg-[url('../images/Earth1.png')] md:bg-[url('../images/Earth2.png')] bg-fixed bg-cover bg-center"
+        id="home"
+      >
+        <nav>
+          <div class="flex justify-between items-center px-8 pt-4">
+            <h1 class="text-3xl">Green Atlas</h1>
 
-        <ul class="hidden md:flex space-x-6 text-white">
-          <li>About</li>
-          <li>Community</li>
-          <li>Energy Data</li>
-        </ul>
+            <ul class="hidden md:flex space-x-6 text-white">
+              <li>About</li>
+              <li>Community</li>
+              <li>Energy Data</li>
+              <li>Contact</li>
+            </ul>
 
-        <div class="hidden md:flex gap-x-6">
-          <a class="btn" href="#">Sign Up</a>
-          <a class="btn bg-orange-400" href="#">Login</a>
-        </div>
-        
-        <!-- Hamburger Icon -->
-        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-        </button>
-        </div>
-        
+            <div class="hidden md:flex gap-x-6">
+              <a class="btn-primary" href="#">Sign Up</a>
+              <a class="btn bg-orange-400" href="#">Login</a>
+            </div>
 
-        <!-- Mobile menu -->
-      <div class="md:hidden">
-        <div id="menu" class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden">
-            <a href="#">About</a>
-            <a href="#">Community</a>
-            <a href="#">Energy Data</a>
-        </div>
-      </div>
-      </nav>
-
-      <section class="h-full grid place-items-center relative">
-        <div class="text-center md:text-right absolute md:right-20">
-          <div class="space-y-6 text-white mb-8">
-            <h3 class="md:text-3xl text-2xl">Let’s help you find the right energy source.</h3>
-            <h1 class="md:text-7xl text-5xl">Wind, <span class="text-blue-600">Hydro</span> or <span class="text-orange-400">Solar</span>?</h1>
-            <p class="text-2xl">We’ll tell you whats best!</p>
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
           </div>
-          <a href="#" class="btn bg-white text-black text-lg py-4 px-12">GET STARTED</a>
+
+          <!-- Mobile menu -->
+          <div class="md:hidden">
+            <div
+              id="menu"
+              class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden"
+            >
+              <a href="#">About</a>
+              <a href="#">Community</a>
+              <a href="#">Energy Data</a>
+            </div>
+          </div>
+        </nav>
+
+        <section class="h-full grid justify-end items-center px-20">
+          <div class="text-center md:text-right md:right-20">
+            <div class="space-y-6 text-white mb-8">
+              <h3 class="md:text-3xl text-2xl">Let’s help you find the right energy source.</h3>
+              <h1 class="md:text-7xl text-5xl">
+                Wind, <span class="text-blue-600">Hydro</span> or
+                <span class="text-orange-400">Solar</span>?
+              </h1>
+              <p class="text-2xl">We’ll tell you whats best!</p>
+            </div>
+            <button class="btn-outline text-lg py-4 px-12 hover:text-white hover:bg-blue-300">
+              <a href="#" class="">GET STARTED</a>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- stats -->
+      <section id="stats" class="relative -mt-28">
+        <!-- <div class="absolute -top-16"> -->
+        <div
+          class="md:flex container mx-auto px-10 md:px-0 space-x-0 space-y-10 md:space-x-10 md:space-y-0"
+        >
+          <div
+            class="w-full md:w-1/3 rounded-3xl bg-cyan-400 font-bold p-10 space-y-5 text-white text-center text-2xl"
+          >
+            <span>Since 2010, our customers have avoided</span>
+            <p class="text-4xl">112,845,311+</p>
+            <p>pounds of C02.</p>
+          </div>
+          <div class="w-full md:w-2/3 rounded-3xl shadow-2xl space-y-4 p-10 bg-white">
+            <span class="font-bold text-2xl text-slate-800"
+              >Let’s utilize sun, wind and water in a better way</span
+            >
+            <p>
+              Ac facilisi dolor lobortis a faucibus imperdiet sapien laoreet pellentesque vulputate.
+              Euismod posuere viverra adipiscing gravida venenatis. Vitae augue potenti inceptos
+              parturient ante porttitor dictum auctor.
+            </p>
+            <br />
+            <p class="mt-5">
+              <a href="#" class="btn bg-cyan-400 text-white py-3 px-8 font-bold hover:bg-cyan-600"
+                >Learn More</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+
+      <!-- about us-->
+
+      <section id="aboutUs" class="pt-14 md:py-14 h-screen">
+        <div
+          class="md:flex container mx-auto w-full h-full md:space-x-10 p-10 md:p-0 space-y-10 md:space-y-0"
+        >
+          <div class="flex flex-col text-white md:w-1/2 relative">
+            <div class="h-full w-full overflow-hidden rounded-xl">
+              <img
+                src="../assets/images/ziko.jpg"
+                class="w-full h-full hover:scale-105 transition ease-in-out duration-700 brightness-75 hover:brightness-100 lg:hidden"
+              />
+              <img
+                src="../assets/images/ziko1.jpg"
+                class="w-full h-full hover:scale-105 transition ease-in-out duration-700 brightness-75 hover:brightness-100 hidden lg:block"
+              />
+            </div>
+
+            <div class="flex absolute bottom-0 px-10 w-full pb-10">
+              <div class="flex bg-cyan-400 p-5 w-1/2 rounded-l-lg space-x-4">
+                <div>
+                  <span class="material-symbols-outlined md-60"> engineering </span>
+                </div>
+                <div class="flex flex-col">
+                  <h6 class="font-bold text-3xl">180k</h6>
+                  <p class="text-lg">Installed Capacity</p>
+                </div>
+              </div>
+              <div class="flex bg-blue-600 p-5 w-1/2 rounded-r-lg space-x-4">
+                <div>
+                  <span class="material-symbols-outlined md-60"> integration_instructions </span>
+                </div>
+                <div class="flex flex-col">
+                  <h6 class="font-bold text-3xl">12k</h6>
+                  <p class="text-lg">Wtgs Installed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col md:w-1/2 space-y-5 px-10">
+            <span class="text-cyan-700 font-bold">ABOUT US</span>
+            <h1 class="text-3xl md:text-5xl font-bold">Best Wind Solutions and Renewable Energy</h1>
+            <p class="text-lg text-zinc-500 font-bold">
+              Over 30 year's experience providing top quality carpentry across world.
+            </p>
+            <p class="text-sm text-zinc-500 tracking-wider">
+              Our team of engineers and technicians are professionally trained by the Firm. In
+              parallel with the repair & maintenance of pumps on floating vehicles, we are truly
+              reliable pump doctors.
+            </p>
+            <div class="text-xl flex flex-col md:flex-row font-bold space-y-5 md:space-y-0">
+              <div class="flex w-full md:w-1/2 space-x-5 items-center">
+                <span class="material-symbols-outlined md-60 text-cyan-400"> nature_people </span>
+                <span>Money Back Guarantee</span>
+              </div>
+              <div class="flex w-full md:w-1/2 space-x-5 items-center">
+                <span class="material-symbols-outlined md-60 text-cyan-400"> payments </span>
+                <span>Hydropower Plants</span>
+              </div>
+            </div>
+            <div class="py-5 pb-10">
+              <a href="#" class="btn1 bg-cyan-400 text-white py-3 px-8 font-bold">READ MORE</a>
+            </div>
+          </div>
         </div>
       </section>
-    </section>
 
-    <!-- about -->
-    <section id="about">
+      <!-- what we offer -->
+      <section id="whatWeOffer" class="">
+        <div>
+          <span>WHAT WE OFFER</span>
+        </div>
+        <div>
+          <span></span>
+        </div>
+        <div></div>
+      </section>
 
-    </section>
+      <!-- pricing -->
+      <section id="pricing">
+        <span class="material-symbols-outlined"> integration_instructions </span>
 
-    <!-- pricing -->
-    <section id="pricing">
+        <span class="material-symbols-outlined"> emoji_objects </span>
 
-    </section>
+        <span class="material-symbols-outlined"> battery_profile </span>
 
-    <!-- footer -->
-    <footer>
-    </footer>
-    <main/>
-    <script src="/js/script.js"></script>
+        <span class="material-symbols-outlined"> charger </span>
+
+        <span class="material-symbols-outlined"> solar_power </span>
+
+        <span class="material-symbols-outlined"> wind_power </span>
+
+        <span class="material-symbols-outlined"> water_ec </span>
+
+        <span class="material-symbols-outlined"> nature_people </span>
+
+        <span class="material-symbols-outlined"> account_tree </span>
+
+        <span class="material-symbols-outlined"> payments </span>
+
+        <span class="material-symbols-outlined"> eco </span>
+
+        <span class="material-symbols-outlined"> support_agent </span>
+      </section>
+
+      <!-- footer -->
+      <footer></footer>
+    </main>
   </body>
 </html>
